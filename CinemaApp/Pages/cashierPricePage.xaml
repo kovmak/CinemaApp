@@ -1,0 +1,84 @@
+﻿<Page
+    x:Class="CinemaApp.Pages.cashierPricePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:CinemaApp.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="cashierPricePage"
+    d:DesignHeight="1080"
+    d:DesignWidth="1440"
+    mc:Ignorable="d">
+
+    <Grid>
+        <TextBlock
+            Margin="95,628,1181,376"
+            Text="Сума:"
+            FontSize="60"
+            Foreground="#363534" 
+            FontFamily="Bahnschrift Light"/>
+        <TextBlock
+            Name="fullPrice"
+            Margin="259,628,857,376"
+            FontSize="60"
+            Foreground="#363534" 
+            FontFamily="Bahnschrift Light"/>
+
+        <TextBlock
+            Text="Звичайних"
+            FontSize="50"
+            Foreground="#363534" 
+            FontFamily="Bahnschrift Light"
+            TextWrapping="Wrap" 
+            Margin="95,88,920,937"/>
+        <TextBox
+            Name="fullTicketPrice"
+            Margin="62,153,900,864" 
+            FontSize="40"
+            Foreground="#363534" 
+            FontFamily="Bahnschrift Light"
+            Padding="15 7 3 5"
+            TextChanged="fullTicketPrice_TextChanged" />
+
+        <TextBlock
+            Text="Студентских"
+            FontSize="50"
+            Foreground="#363534" 
+            FontFamily="Bahnschrift Light"
+            TextWrapping="Wrap" 
+            Margin="95,242,920,782"/>
+        <TextBox
+            Name="studentTicketPrice"
+            Margin="62,307,900,710" 
+            FontSize="40"
+            Foreground="#363534" 
+            FontFamily="Bahnschrift Light"
+            Padding="15 7 3 5"
+            TextChanged="studentTicketPrice_TextChanged" />
+
+        <TextBlock
+            Text="Пенсіонерских"
+            FontSize="50"
+            Foreground="#363534" 
+            FontFamily="Bahnschrift Light"
+            TextWrapping="Wrap" 
+            Margin="95,393,920,632"/>
+        <TextBox
+            Name="panshioneerTicketPrice"
+            Margin="62,458,900,559" 
+            FontSize="40"
+            Foreground="#363534" 
+            FontFamily="Bahnschrift Light"
+            Padding="15 7 3 5"
+            TextChanged="panshioneerTicketPrice_TextChanged" />
+
+        <Button
+            Name="payButton"
+            Content="Clear"
+            FontSize="50"
+            Foreground="#363534" 
+            FontFamily="Bahnschrift Light"
+            Margin="640,628,558,370"
+            Click="payButton_Click" />
+    </Grid>
+</Page>

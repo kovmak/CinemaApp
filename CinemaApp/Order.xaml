@@ -1,0 +1,71 @@
+﻿<Window
+    x:Class="CinemaApp.Order"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:CinemaApp"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Order"
+    Width="1920"
+    Height="1080"
+    WindowState="Maximized"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Grid Background="#575757">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="6*" />
+        </Grid.ColumnDefinitions>
+        <WrapPanel>
+            <Button
+                Name="orderButton"
+                Content="Зал"
+                Width="360"
+                Height="150"
+                Margin="55 70 20 20"
+                FontSize="40"
+                Foreground="#363534" 
+                FontFamily="Bahnschrift Light"
+                Click="orderButton_Click" />
+            <Button
+                Name="filmsButton"
+                Content="Фільми"
+                Width="360"
+                Height="150"
+                Margin="55 20"
+                FontSize="40"
+                Foreground="#363534" 
+                FontFamily="Bahnschrift Light"
+                Click="filmsButton_Click" />
+            <Button
+                Name="priceButton"
+                Content="Для касирів"
+                Width="360"
+                Height="150"
+                Margin="55 20"
+                FontSize="40"
+                Foreground="#363534" 
+                FontFamily="Bahnschrift Light"
+                Click="priceButton_Click" />
+        </WrapPanel>
+        <Frame
+            Name="mainPage"
+            Grid.Column="1"
+            NavigationUIVisibility="Hidden" />
+        <Button
+            Name="exitButton"
+            Grid.Column="1"
+            Width="50"
+            Height="50"
+            Margin="10 10 30 10"
+            HorizontalAlignment="Right"
+            VerticalAlignment="top"
+            Click="exitButton_Click"
+            BorderThickness="0" 
+            Style="{DynamicResource style_non}">
+            <Button.Background>
+                <ImageBrush ImageSource="/close.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
